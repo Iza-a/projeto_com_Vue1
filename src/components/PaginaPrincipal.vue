@@ -1,21 +1,13 @@
 <template>
-ola
-<ImagemPrincipal/>
-<br>
-<VideoUnico/>
-<br>
-<TabelasDiversos/>
-<br>
-
+    <ImagensPrincipal/>
 </template>
 
 <script>
-import ImagemPrincipal from '@/components/ImagensDiversas.vue'
-import VideoUnico from './VideoUnico.vue'
-export default {
-    name: 'PaginaPrincipal',
-    components: {
-        ImagemPrincipal, VideoUnico,
-    },
-}
+    import ImagensPrincipal from '@/components/ImagensGatos.vue';
+    export default{
+        name: 'PaginaPrincipal',
+        components: {
+            ImagensPrincipal
+        }
+    }
 </script>
