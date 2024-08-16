@@ -1,6 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav>
+      <ul>
+      <router-link to="/">Home</router-link>
+      <router-link to="/videos">Videos Diversos</router-link>
+    </ul>
+    </nav>
+    <router-view></router-view>
+  </div>
+  <div id="app">
+    <HelloWorld />
+  </div>
+  <div id="app">
+    <TabelaDiversos />
+  </div>
+  
 </template>
 
 <script>
@@ -12,15 +26,29 @@ export default {
     HelloWorld
   }
 }
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+nav{
+  width: 100%;
+  background: rgb(75, 88, 202);
+  margin: 0%
 }
+
+ul{
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+
 </style>
